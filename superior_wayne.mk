@@ -9,8 +9,8 @@
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit some common stuff from Project-Awaken
-AWAKEN_BUILD_TYPE := OFFICIAL
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -23,6 +23,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := awaken_wayne
+PRODUCT_NAME := superior_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
